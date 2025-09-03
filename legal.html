@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.mediterraneandreamers.com/legal.html" />
+  <title>Legal Notice — Mediterranean Dreamers</title>
+  <meta name="description" content="Legal notice, terms of use and disclaimers for Mediterranean Dreamers." />
+  <meta name="keywords" content="retirees, retirement, Mediterranean coast, Spain, Denia, Oliva, Gandia, Javea, Moraira, relocation, housing, banking, taxes, healthcare, social club" />
+  <meta property="og:title" content="Mediterranean Dreamers" />
+  <meta property="og:description" content="Live your Mediterranean retirement. We handle the rest: housing, paperwork, banking, taxes, healthcare and community." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <link rel="icon" href="/favicon.png" />
+  <style>
+    :root{--bg:#0f172a;--card:#111827;--text:#e5e7eb;--muted:#94a3b8;--brand:#22c55e;--shadow:0 20px 40px rgba(2,6,23,.35);--radius:18px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;color:var(--text);
+         background:linear-gradient(180deg,#0b1220,#0f172a 22%,#0f172a 78%,#0b1220)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    .btn{display:inline-block;padding:.9rem 1.1rem;border-radius:999px;background:var(--brand);color:#06210e;font-weight:700;box-shadow:var(--shadow)}
+    .btn-outline{background:transparent;border:1px solid #2dd46f;color:var(--text)}
+    header{position:sticky;top:0;backdrop-filter:saturate(160%) blur(8px);background:rgba(2,6,23,.55);border-bottom:1px solid rgba(148,163,184,.12);z-index:50}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+    .brand img{width:34px;height:34px;border-radius:10px;border:1px solid rgba(255,255,255,.15)}
+    .menu{display:flex;gap:18px;align-items:center}
+    .mobile-toggle{display:none;border:1px solid rgba(148,163,184,.2);padding:8px 12px;border-radius:10px;background:transparent;color:var(--text)}
+    .card{background:linear-gradient(180deg,#0c1322,#0f172a);border:1px solid rgba(148,163,184,.12);border-radius:var(--radius);box-shadow:var(--shadow)}
+    section{padding:48px 0} h1{line-height:1.1}
+    footer{padding:24px 0;color:var(--muted);border-top:1px solid rgba(148,163,184,.12)}
+    @media (max-width: 900px){
+      .menu{display:none}.mobile-toggle{display:block}
+    }
+  </style>
+
+  <style>
+    .container{width:min(900px,92%);margin:0 auto}
+    main{padding:52px 0} h1{font-size:clamp(24px,3.8vw,38px);margin:0 0 18px}
+    h2{font-size:clamp(18px,2.8vw,26px);margin:28px 0 10px}
+    p, li{color:var(--muted);line-height:1.65} .card{padding:24px}
+    a{color:inherit;text-decoration:underline}
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="Mediterranean Dreamers logo" />
+          <span>Mediterranean Dreamers</span>
+        </a>
+        <div class="menu" id="menu">
+          <a href="/#services">Services</a>
+          <a href="/#about">About</a>
+          <a href="/#club">Social Club</a>
+          <a href="/#plans">Plans</a>
+          <a href="/#contact">Contact</a>
+          <a class="btn btn-outline" href="https://wa.me/34695099856" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <button class="mobile-toggle" id="toggle">Menu</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h1>Legal Notice</h1>
+      <p><em>Owner:</em> Mediterranean Dreamers</p>
+      <p><em>Contact:</em> hello@mediterraneandreamers.com · WhatsApp +34 695 099 856</p>
+      <p><em>Registered address:</em> Dénia, Alicante, Spain (update with your full address when available).</p>
+
+      <h2>Website use</h2>
+      <p>By accessing this website you agree to use it lawfully and not to engage in activities that may damage the rights of Mediterranean Dreamers or third parties.</p>
+
+      <h2>Information & advice</h2>
+      <p>Content on this site is for general information only. We provide relocation and administrative support, but nothing here constitutes legal, tax or medical advice. Personalised advice is given to clients under a written engagement.</p>
+
+      <h2>Intellectual property</h2>
+      <p>Texts, layout and assets on this site are owned by Mediterranean Dreamers or licensed. You may not reproduce or distribute them without permission.</p>
+
+      <h2>Links</h2>
+      <p>This site may link to third‑party websites. We are not responsible for their content or policies.</p>
+
+      <h2>Liability</h2>
+      <p>We take care to keep information accurate and the site available, but we cannot guarantee completeness or uninterrupted availability. We are not liable for damages arising from use of the site.</p>
+
+      <h2>Governing law</h2>
+      <p>These terms are governed by Spanish law. In case of dispute, the courts of Alicante shall have jurisdiction unless mandatory law provides otherwise.</p>
+
+      <p><a href="/">Back to home</a></p>
+    </article>
+  </main>
+  
+  <footer>
+    <div class="container">
+      © <span id="y"></span> Mediterranean Dreamers • <a href="/legal.html">Legal Notice</a> • <a href="/privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('toggle'); const menu = document.getElementById('menu');
+    if(toggle && menu){ toggle.addEventListener('click', ()=>{ const isOpen = getComputedStyle(menu).display!=='none'; menu.style.display=isOpen?'none':'flex'; }); }
+  </script>
+
+</body>
+</html>
