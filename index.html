@@ -13,27 +13,38 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/og-image.jpg" />
   <link rel="icon" href="/favicon.png" />
+  /* botones con degradado */
+.btn{ background:linear-gradient(90deg, var(--brand), #34d399); box-shadow:0 18px 36px rgba(34,197,94,.35); }
+.btn.btn-outline{ border:1px solid #34d399; }
+
+/* h1 con texto degradado */
+.hero h1{
+  background:linear-gradient(90deg,#e2e8f0,#a7f3d0);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+
+/* tarjetas e imágenes */
+.card{ border:1px solid rgba(56,189,248,.18); }
+.hero .image img, #about img, #club img{ width:100%; height:100%; object-fit:cover; }
+
   <style>
-    :root{--bg:#0f172a;--card:#111827;--text:#e5e7eb;--muted:#94a3b8;--brand:#22c55e;--shadow:0 20px 40px rgba(2,6,23,.35);--radius:18px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;color:var(--text);
-         background:linear-gradient(180deg,#0b1220,#0f172a 22%,#0f172a 78%,#0b1220)}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{width:min(1100px,92%);margin-inline:auto}
-    .btn{display:inline-block;padding:.9rem 1.1rem;border-radius:999px;background:var(--brand);color:#06210e;font-weight:700;box-shadow:var(--shadow)}
-    .btn-outline{background:transparent;border:1px solid #2dd46f;color:var(--text)}
-    header{position:sticky;top:0;backdrop-filter:saturate(160%) blur(8px);background:rgba(2,6,23,.55);border-bottom:1px solid rgba(148,163,184,.12);z-index:50}
-    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-    .brand img{width:34px;height:34px;border-radius:10px;border:1px solid rgba(255,255,255,.15)}
-    .menu{display:flex;gap:18px;align-items:center}
-    .mobile-toggle{display:none;border:1px solid rgba(148,163,184,.2);padding:8px 12px;border-radius:10px;background:transparent;color:var(--text)}
-    .card{background:linear-gradient(180deg,#0c1322,#0f172a);border:1px solid rgba(148,163,184,.12);border-radius:var(--radius);box-shadow:var(--shadow)}
-    section{padding:48px 0} h1{line-height:1.1}
-    footer{padding:24px 0;color:var(--muted);border-top:1px solid rgba(148,163,184,.12)}
-    @media (max-width: 900px){
-      .menu{display:none}.mobile-toggle{display:block}
+    :root{
+  --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8;
+  --brand:#22c55e; --brand-2:#16a34a; --shadow:0 20px 40px rgba(2,6,23,.35); --radius:18px;
+  /* nuevos acentos */
+  --accent:#f97316;   /* coral/orange */
+  --sea:#38bdf8;      /* sky/teal */
+}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;
+  color:var(--text);
+  /* fondo con toques de color */
+  background:
+    radial-gradient(900px 420px at 85% 8%, rgba(56,189,248,.12), transparent 60%),
+    radial-gradient(700px 320px at 12% 42%, rgba(249,115,22,.10), transparent 60%),
+    linear-gradient(180deg,#0b1220, #0f172a 22%, #0f172a 78%, #0b1220);
+}
     }
   </style>
 
